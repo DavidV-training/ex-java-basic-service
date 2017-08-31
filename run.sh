@@ -1,4 +1,5 @@
 #!/bin/sh
+export DOCKER_RUN_EXTRA_ARGS="$@"
 
 trap 'kill -TERM $PID' TERM INT
 
@@ -13,7 +14,7 @@ JAVA_OPTS_DEFAULT="-server"
 JAVA_OPTS="${JAVA_OPTS:-$JAVA_OPTS_DEFAULT}"
 
 echo "java ${JAVA_OPTS} ${JAVA_MEM_OPTS} -jar /service.jar"
-java ${JAVA_OPTS} ${JAVA_MEM_OPTS} -jar /service.jar
+java ${JAVA_OPTS} ${JAVA_MEM_OPTS} -jar /service.jar ${DOCKER_RUN_EXTRA_ARGS}
 
 PID=$!
 wait $PID
