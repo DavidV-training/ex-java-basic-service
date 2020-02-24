@@ -1,6 +1,6 @@
 ### Exercice : 
 A) Ecrire le Dockerfile
-- Qui se base sur java:8u111-jdk-alpine
+- Qui se base sur jopenjdk:15-alpine
 - Qui doit : 
   1) ajouter le jar à la racide de l'image en le renommant service.jar
   2) ajouter le script run.sh à la racine de l'image
@@ -17,13 +17,13 @@ C) instancier un conteneur :
 ### Initialisation : 
 ```sh
 $ # Récupérer le source
-$ git clone https://gitlab.com/dve-formation-docker/basicservice.git
+$ git clone https://github.com/DavidV-training/ex-java-basic-service.git
 $ 
 $ # générer le jar
 $ cd basicservice
 $ maven package
 $ 
-$ # l'executer localement
+$ # l'executer localement (pour tester)
 $ java -jar basic-service-1.0-SNAPSHOT.jar
 ```
 
