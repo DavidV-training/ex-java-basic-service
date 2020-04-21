@@ -27,7 +27,9 @@ $ # l'executer localement (pour tester)
 $ java -jar basic-service-1.0-SNAPSHOT.jar
 ```
 
-
-
+---------------------------------------------------------
+### Attendus : 
+- un fichier Dockerfile
+- un fichier exo.sh avec la commande de build et la commande de run
 
 
