@@ -24,7 +24,7 @@ $ cd basicservice
 $ maven package
 $ 
 $ # l'executer localement (pour tester)
-$ java -jar basic-service-1.0-SNAPSHOT.jar
+$ java -jar basic-service-1.0-SNAPSHOT.jar --server.port=8081
 ```
 
 ---------------------------------------------------------
